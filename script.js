@@ -7,7 +7,7 @@ const channelId = '@YOUR_CHANNEL_NAME'; // Kanalni nomi yoki idsi
 const groupId = '-738563273'; // Guruh ID'si
 const bot = new TelegramBot(token);
 
-// Har soatda boshlash uchun
+// Har soatda boshlash uchun =>| 0 * * * * |
 cron.schedule('*/5 * * * * *', () => {
  
   // const message = 'Bu habar har soatda yuborilmoqda!';
