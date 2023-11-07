@@ -9,11 +9,14 @@ const bot = new TelegramBot(token);
 
 // Har soatda boshlash uchun
 cron.schedule('*/5 * * * * *', () => {
+ 
   // const message = 'Bu habar har soatda yuborilmoqda!';
   const image = `./rasm.png`; // Rasm fayli manzili
-  // const caption = 'Rasm va matn ko\'rinishida habar';
+  const caption = '';
+
   
   // bot.sendPhoto(channelId, fs.readFileSync(image), { caption: caption });
   bot.sendPhoto(groupId, fs.readFileSync(image), { caption: caption });
   // bot.sendMessage(channelId, message);
+
 });
