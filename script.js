@@ -8,7 +8,7 @@ const groupId = '-738563273'; // Guruh ID'si
 const bot = new TelegramBot(token);
 
 // Har soatda boshlash uchun =>| 0 * * * * |
-cron.schedule('*/5 * * * * *', () => {
+cron.schedule('0 * * * *', () => {
  
   // const message = 'Bu habar har soatda yuborilmoqda!';
   const image = `./rasm.png`; // Rasm fayli manzili
